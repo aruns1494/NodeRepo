@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/aruns1494/NodeRepo/issues"
   },
-  "homepage": "https://github.com/aruns1494/NodeRepo#readme"
+  "homepage": "https://github.com/aruns1494/NodeRepo#readme",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  }
 }
