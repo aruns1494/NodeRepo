@@ -2,5 +2,61 @@
 
 body {
   padding: 25px;
-  
+
+}
+
+input[name="winnerList"]  {
+  font-size: 18px;
+  padding: 5px;
+  font-family: serif;
+  float: left;
+}
+
+input[name="loserList"]  {
+  padding: 5px;
+  font-size: 18px;
+  font-family: serif;
+  float: right;
+}
+div[id="winnerDiv"]{
+  width: 550px;
+  height: 100px;
+  display: inline-block;
+
+}
+div[id="loserDiv"]{
+  width: 550px;
+  height: 100px;
+  display: inline-block;
+
+}
+div[id="data"]  {
+  padding: 25px;
+  position: relative;
+  width: auto;
+  height: auto;
+  display: inline-block;
+}
+div[id="da"]  {
+  margin-top: 25px;
+  position: relative;
+  width: auto;
+  height: auto;
+}
+div[id="img1"]{
+  position: relative;
+  width: 375px;
+  height: 500px;
+  display: inline-block;
+
+}
+div[id="map"]{
+  width: 375px;
+  height: 500px;
+  display: inline-block;
+}
+div[id="img2"]{
+  width: 375px;
+  height: 500px;
+  display: inline-block;
 }
