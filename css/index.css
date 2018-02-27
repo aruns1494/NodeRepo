@@ -20,43 +20,53 @@ input[name="loserList"]  {
 }
 div[id="winnerDiv"]{
   width: 550px;
-  height: 100px;
+  height: 50px;
   display: inline-block;
 
 }
 div[id="loserDiv"]{
   width: 550px;
-  height: 100px;
+  height: 50px;
   display: inline-block;
 
 }
 div[id="data"]  {
-  padding: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 0px;
   position: relative;
   width: auto;
-  height: auto;
+  height: 60px;
   display: inline-block;
 }
 div[id="da"]  {
-  margin-top: 25px;
+  margin-top: 5px;
   position: relative;
   width: auto;
   height: auto;
 }
 div[id="img1"]{
   position: relative;
-  width: 375px;
+  width: 300px;
   height: 500px;
   display: inline-block;
-
+  vertical-align: middle;
 }
 div[id="map"]{
-  width: 375px;
-  height: 500px;
+  width: 600px;
+  height: 450px;
   display: inline-block;
+  vertical-align: middle;
+  background-color: #100410;
 }
 div[id="img2"]{
-  width: 375px;
+  position: relative;
+  width: 300px;
   height: 500px;
   display: inline-block;
+  vertical-align: middle;
+}
+img {
+    vertical-align: middle;
 }

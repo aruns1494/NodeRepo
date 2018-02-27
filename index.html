@@ -3,38 +3,43 @@
 <head>
   <title>Welcome to NodeJS </title>
   <script type="text/javascript" src="http://d3js.org/d3.v3.js"></script>
-
+  <script type="text/javascript" src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
   <link rel="stylesheet" type="text/css" href="css/index.css" />
 </head>
 <body>
+  <center>
+      <p><h1> WELCOME TO TENNIS PLAYER COMPARATOR </h1> </p>
   <div id="data">
     <form id = "myForm">
+      <div id="winnerDiv">
+        <input list="winners" name="winnerList" placeholder ="Player1">
+        <datalist id="winners"></datalist>
+      </div>
+      <div id="loserDiv">
+        <input list="losers" name="loserList"  placeholder="Player2">
+        <datalist id="losers"></datalist>
 
-    <div id="winnerDiv">
-      <input list="winners" name="winnerList" placeholder ="Player1">
-      <datalist id="winners"></datalist>
-    </div>
-    <div id="loserDiv" name="loserList">
-      <input list="losers" name="loserList"  placeholder="Player2">
-      <datalist id="losers"></datalist>
-    </div>
-</form>
-    </div>
+      </div>
+    </form>
+  </div>
 
-
-  <!--<div id="youtube">
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/BUMS-4lpOk4"
-      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-    </iframe>
-  </div> -->
   <div id = "da">
-    <div id="img1">
+
+    <div id="img1" >
+        <br><br><br>
+      <img id="image1" width="250px" height="250px">
+      <p id="P1Details"></p>
     </div>
-    <div id="map">
+    <div id="map" >
+
     </div>
     <div id="img2">
+        <br><br><br>
+      <img id="image2" width="250px" height="250px">
+      <p id="P2Details"></p>
     </div>
-</div>
+  </div>
+</center>
   <script src="js/index.js"></script>
 
 
