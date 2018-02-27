@@ -62,6 +62,9 @@ function confirmPlayer(arrayOfObject){
     var width = 550;
     var height = 80;
 
+    var p1Score = (~~pl1.Aces/maxAce)*30 + (~~pl1.Wins/~~pl1.MatchCount)*20 + (~~pl1.TotalPoints/maxTotalPts)*10 + (minDF/~~pl1.DoubleFault)*40;
+    var p2Score = (~~pl2.Aces/maxAce)*30 + (~~pl2.Wins/~~pl2.MatchCount)*20 + (~~pl2.TotalPoints/maxTotalPts)*10 + (minDF/~~pl2.DoubleFault)*40;
+
     document.getElementById("map").innerHTML = "<br>";
     var aceGraph = d3.select('#map').append('svg')
         .attr('width',width)
@@ -249,4 +252,14 @@ function confirmPlayer(arrayOfObject){
         .style("fill", function(d){ if(d.Name=="P1") return c1; else return c2;})
         .on("mouseover",sTip.show)
         .on("mouseout",sTip.hide)
+
+    var decision = "Score of "+pl1.Name + " is "+~~p1Score.toFixed(2)+"% while Score of "+pl2.Name+" is "+~~p2Score.toFixed(2)+"%";
+    if(p1Score > p2Score){
+        decision = decision + "<br>It can be statistically expected that "+pl1.Name+"will Win against "+pl2.Name;
+    }
+    else {
+        decision = decision + "<br>It can be statistically expected that "+pl2.Name+"will Win against "+pl1.Name;
+    }
+
+    document.getElementById("result").innerHTML = "<span><h2>"+decision+"</h2></span>"
 }

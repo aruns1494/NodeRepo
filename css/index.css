@@ -2,7 +2,12 @@
 
 body {
   padding: 25px;
-
+  width: auto;
+  height: auto;
+  background-image: url('/res/Aus.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 input[name="winnerList"]  {
@@ -58,7 +63,7 @@ div[id="map"]{
   height: 450px;
   display: inline-block;
   vertical-align: middle;
-  background-color: #100410;
+
 }
 div[id="img2"]{
   position: relative;
@@ -69,4 +74,13 @@ div[id="img2"]{
 }
 img {
     vertical-align: middle;
+}
+p{
+    font-style: oblique;
+    font-family: serif;
+    color: #f3312e;
+}
+h1{
+    font-family: serif;
+    color: #f3312e;
 }
